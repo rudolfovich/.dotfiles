@@ -1,0 +1,23 @@
+[user]
+  name = Vladimir Shestakov
+  email = shestakov@enaza.ru
+  signingkey = 5F26E655
+[core]
+  editor = vim
+  autocrlf = input
+[commit]
+  template=~/.gitmessage.txt
+[push]
+  default = current
+[color]
+  ui = true
+[color "status"]
+  changed = blue
+  untracked = magenta
+  added = green
+  nobranch = red
+  header = white normal dim
+[apply]
+  ignorewhitespace = true
+  whitespace = warn
+

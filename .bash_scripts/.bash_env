@@ -1,0 +1,23 @@
+#!/bin/bash
+
+export TERM=xterm-256color
+
+# User prompt
+export PS1='\
+\[\e[1;31m\][\D{%d.%m.%y}] \[\e[1;33m\]\u\[\e[1;34m\]@\[\e[1;32m\]\h:\[\e[1;34m\]\w\[\e[1;36m\]\
+$(which git 1>/dev/null 2>/dev/null && git rev-parse --abbrev-ref HEAD 2>/dev/null | sed -e "s/\(..*\)/ \\[\1\\] /")\n\
+\[\e[1;31m\][\t]${USERLABEL:+ \[\e[1;36m\]($USERLABEL)}\
+${debian_chroot:+\n\[\e[1;41;32m\]($debian_chroot)\[\e[0m\]}\
+\[\e[1;35m\] \#\[\e[1;35m\]\$\
+\[\e[0m\] '
+export PS2='\[\e[1;31m\]>\[\e[0m\] '
+export PS3='\[\e[1;31m\]=\[\e[0m\] '
+export PS4='\[\e[1;31m\]+\[\e[0m\] '
+
+export LESS_TERMCAP_mb=$'\E[01;31m'
+export LESS_TERMCAP_md=$'\E[01;31m'
+export LESS_TERMCAP_me=$'\E[0m'
+export LESS_TERMCAP_se=$'\E[0m'
+export LESS_TERMCAP_so=$'\E[01;44;33m'
+export LESS_TERMCAP_ue=$'\E[0m'
+export LESS_TERMCAP_us=$'\E[01;32m'
