@@ -1,0 +1,30 @@
+#using mpi ;
+
+using gcc 
+  : bcc 
+  : /opt/bcc/arm-linux-gnu/bin/arm-linux-gnueabi-g++ 
+  : 
+    <compileflags>"-fPIC"
+    <compileflags>"-DPIC"
+    <compileflags>"-Os"
+    <compileflags>"-Os"
+    <compileflags>"-Wno-multichar"
+    <compileflags>"-rdynamic"
+    <compileflags>"-fexceptions"
+    <compileflags>"-ftree-vectorize"
+    <compileflags>"-fdata-sections"
+    <compileflags>"-ffunction-sections"
+    <compileflags>"-fpermissive "
+    <compileflags>"-flto"
+    <compileflags>"-floop-interchange"
+    <compileflags>"-ftree-loop-distribution"
+    <compileflags>"-floop-strip-mine"
+    <compileflags>"-floop-block"
+    <compileflags>"-fomit-frame-pointer"
+    <compileflags>"-DLOCALE_PATH=\"/usr/share/locale\" -D_FILE_OFFSET_BITS=64 "
+    <cxxflags>"-Wl,-gc-sections -Wl,-flto"
+  ;
+#using gcc : mipsel : mipsel-linux-uclibc-g++ ;
+#using gcc : amd64-linux-gnueabihf : g++ ;
+#using gcc : i686-linux-gnueabihf : g++ ;
+#using gcc : sh4 : sh4-linux-g++ ;

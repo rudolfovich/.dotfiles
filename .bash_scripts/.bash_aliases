@@ -3,6 +3,12 @@
 
 # Aliases
 #
+
+
+alias humax=". ${BCM_ROOT}/humax/env.sh"
+alias bcc=". ${BCC_ROOT}/env.sh"
+
+
 # Some people use a different file for aliases
 # if [ -f "${HOME}/.bash_aliases" ]; then
 #   source "${HOME}/.bash_aliases"

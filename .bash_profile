@@ -1,20 +1,28 @@
 # .bash_profile
 
-# Get the aliases and functions
-if [ -f ~/.bashrc ]; then
-	. ~/.bashrc
-fi
+# Set user-defined locale
+#export LANG=ru_RU.UTF-8
+export LANG=en_GB.UTF-8
 
-# User specific environment and startup programs
+export PATH=$HOME/bin:$PATH
+#export PATH=$HOME/.local/bin:$PATH
 
-PATH=$PATH:$HOME/.local/bin:$HOME/bin
+#export CDPATH=.:~/projects/playkey
 
-export PATH
+export BCM_ROOT="/opt/broadcom"
+export BCMGCC="${BCM_ROOT}/stbgcc-4.5.3-2.4"
+export BCMSRC="${BCM_ROOT}/humax/src"
+export HUMAX_BCMSRC="${BCMSRC}"
+export HUMAX_BCMSRC="${BCMSRC}"
+export HUMAXSHARED_BCMSRC="${BCMSRC}"
+export ELTEX_BCMSRC="${BCMSRC}"
+export SMARTLABS_BCMSRC="${BCMSRC}"
+export INFOMIR_BCMSRC="${BCMSRC}"
 
-export BCMGCC=${HOME}/projects/broadcom/stbgcc-4.5.3-2.4
-export HUMAX_BCMSRC=${HOME}/projects/broadcom/humax/src
-export HUMAXSHARED_BCMSRC=${HOME}/projects/broadcom/humax/src
-export ELTEX_BCMSRC=${HOME}/projects/broadcom/humax/src
-export SMARTLABS_BCMSRC=${HOME}/projects/broadcom/humax/src
-export INFOMIR_BCMSRC=${HOME}/projects/broadcom/humax/src
+export LG_ROOT="/opt/lg"
 
+export BCC_ROOT="/opt/bcc"
+
+#export _JAVA_OPTIONS='-Xms512m -Xmx4096m'
+# --laf com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel
+# -J-Xmx2096m

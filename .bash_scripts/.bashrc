@@ -77,11 +77,11 @@
 # Whenever displaying the prompt, write the previous line to disk
 # export PROMPT_COMMAND="history -a"
 
-[[ -f ~/.bash_scripts/.bash_env ]] && . ~/.bash_scripts/.bash_env
+[[ -f ~/.dotfiles/.bash_scripts/.bash_env ]] && . ~/.dotfiles/.bash_scripts/.bash_env
 
 
-[[ -f ~/.bash_scripts/.bash_aliases ]] && . ~/.bash_scripts/.bash_aliases
+[[ -f ~/.dotfiles/.bash_scripts/.bash_aliases ]] && . ~/.dotfiles/.bash_scripts/.bash_aliases
 
 
-[[ -f ~/.bash_scripts/.bash_functions ]] && . ~/.bash_scripts/.bash_functions
+[[ -f ~/.dotfiles/.bash_scripts/.bash_functions ]] && . ~/.dotfiles/.bash_scripts/.bash_functions
 
