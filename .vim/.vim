@@ -1,0 +1,1 @@
+/home/vshestakov/.dotfiles/.vim
