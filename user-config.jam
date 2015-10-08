@@ -6,7 +6,7 @@ using gcc
   : 
     <compileflags>"-fPIC"
     <compileflags>"-DPIC"
-    <compileflags>"-Os"
+    <compileflags>"-s"
     <compileflags>"-Os"
     <compileflags>"-Wno-multichar"
     <compileflags>"-rdynamic"
@@ -25,6 +25,43 @@ using gcc
     <cxxflags>"-Wl,-gc-sections -Wl,-flto"
   ;
 #using gcc : mipsel : mipsel-linux-uclibc-g++ ;
+#using gcc : amd64-linux-gnueabihf : g++ ;
+#using gcc : i686-linux-gnueabihf : g++ ;
+#using gcc : sh4 : sh4-linux-g++ ;
+
+using gcc 
+  : stlinux
+  : /opt/stlinux/STLinux-2.3/devkit/sh4/bin/sh4-linux-g++
+  : 
+    <compileflags>"-fPIC"
+    <compileflags>"-DPIC"
+    <compileflags>"-Os"
+    <compileflags>"-s"
+    <compileflags>"-Wno-multichar"
+    <compileflags>"-rdynamic"
+    <compileflags>"-fexceptions"
+    <compileflags>"-ftree-vectorize"
+    <compileflags>"-fdata-sections"
+    <compileflags>"-ffunction-sections"
+    <compileflags>"-fpermissive "
+    <compileflags>"-fomit-frame-pointer"
+    <compileflags>"-DLOCALE_PATH=\"/usr/share/locale\""
+    <compileflags>"-D_FILE_OFFSET_BITS=64"
+    <compileflags>"-I/opt/stlinux/STLinux-2.3/devkit/sh4/target/usr/include/c++/4.2.4"
+    <compileflags>"-I/opt/stlinux/STLinux-2.3/devkit/sh4/target/usr/include/c++/4.2.4/sh4-linux"
+    <compileflags>"-I/opt/stlinux/STLinux-2.3/devkit/sh4/target/usr/include"
+    <compileflags>"-I/opt/stlinux/STLinux-2.3/devkit/sh4/target/include"
+    <compileflags>"-I/opt/stlinux/STLinux-2.3/devkit/sh4/target/usr/include"
+    <compileflags>"-I/opt/stlinux/STLinux-2.3/host/include"
+    <compileflags>"-I/opt/stlinux/STLinux-2.3/host/usr/include"
+    <cxxflags>"-Wl,-gc-sections"
+    <linkerflags>"-L/opt/stlinux/STLinux-2.3/devkit/sh4/target/usr/lib"
+    <linkerflags>"-L/opt/stlinux/STLinux-2.3/devkit/sh4/target/lib"
+    <linkerflags>"-L/opt/stlinux/STLinux-2.3/host/lib"
+    <linkerflags>"-L/opt/stlinux/STLinux-2.3/host/usr/lib"
+  ;
+  
+#using gcc : mipsel                : mipsel-linux-uclibc-g++ ;
 #using gcc : amd64-linux-gnueabihf : g++ ;
 #using gcc : i686-linux-gnueabihf : g++ ;
 #using gcc : sh4 : sh4-linux-g++ ;
