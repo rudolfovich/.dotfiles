@@ -131,3 +131,6 @@ alias l='ls -CF'                              #
 # alias cd=cd_func
 
 alias rcp='rsync -avh --progress'
+
+alias ff='git merge --ff-only '
+

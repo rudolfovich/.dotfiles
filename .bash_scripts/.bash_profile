@@ -15,9 +15,11 @@ export BCMSRC="${BCM_ROOT}/humax/src"
 export HUMAX_BCMSRC="${BCMSRC}"
 export HUMAX_BCMSRC="${BCMSRC}"
 export HUMAXSHARED_BCMSRC="${BCMSRC}"
-export ELTEX_BCMSRC="${BCMSRC}"
 export SMARTLABS_BCMSRC="${BCMSRC}"
 export INFOMIR_BCMSRC="${BCMSRC}"
+
+export ELTEX_BCMSRC="${BCMSRC}"
+export ELTEXNV10X_ROOT="/opt/eltex/NV10x/mips-4.3"
 
 export LG_ROOT="/opt/lg"
 

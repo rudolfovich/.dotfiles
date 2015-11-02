@@ -65,3 +65,17 @@ using gcc
 #using gcc : amd64-linux-gnueabihf : g++ ;
 #using gcc : i686-linux-gnueabihf : g++ ;
 #using gcc : sh4 : sh4-linux-g++ ;
+
+using gcc 
+  : eltexnv101 
+  : /opt/eltex/NV10x/mips-4.3/bin/mips-linux-gnu-g++
+  : 
+    <host-os>"linux"
+    <architecture>"mips32"
+    <compileflags>"-EL"
+    <compileflags>"-fPIC"
+    <compileflags>"-DPIC"
+    <compileflags>"-O2"
+    <cxxflags>"-Wl,-EL"
+  ;
+
