@@ -39,9 +39,14 @@ alias fgrep='fgrep --color=auto'              # show differences in colour
 #
 # Some shortcuts for different directory listings
 #alias ls='ls -hF --color=tty'                 # classify files in colour
-alias ls='/bin/ls -F --color=tty --show-control-chars --group-directories-first'
-alias dir='ls --color=auto --format=vertical'
-alias vdir='ls --color=auto --format=long'
+if [[ "$(uname)" != "Darwin" ]]; then
+  alias ls='/bin/ls -F --color=tty --show-control-chars --group-directories-first'
+else
+  export CLICOLOR=cons25
+  alias ls='/bin/ls -FGvp'
+fi
+alias dir='ls -1'
+alias vdir='ls -l'
 alias ll='ls -l'                              # long list
 alias la='ls -A'                              # all but . and ..
 alias l='ls -CF'                              #
