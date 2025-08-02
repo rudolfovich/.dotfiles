@@ -1,0 +1,6 @@
+[user]
+	name = Vladimir Shestakov
+	email = vldmr256@gmail.com
+[pull]
+	rebase = true
+

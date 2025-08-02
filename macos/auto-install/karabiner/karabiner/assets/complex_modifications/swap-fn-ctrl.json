@@ -1,0 +1,20 @@
+{
+    "title": "Swap Fn and Left Control",
+    "rules": [
+{
+    "description": "Swap Fn and Left Control",
+    "manipulators": [
+        {
+            "from": { "key_code": "fn" },
+            "to": [{ "key_code": "left_control" }],
+            "type": "basic"
+        },
+        {
+            "from": { "key_code": "left_control" },
+            "to": [{ "key_code": "fn" }],
+            "type": "basic"
+        }
+    ]
+}
+    ]
+}

@@ -1,0 +1,50 @@
+environment {
+    terminal "iTerm2"
+    textEditor "Visual Studio Code"
+}
+
+behavior {
+    theme "Kon"
+
+    layout {
+        alwaysShowTabBar true
+        showActionBar true
+    }
+      setCurrentPathAsWindowTitle true
+    preselectFirstMenuItem true
+
+    sizeFormat "adaptive"
+    groupingSeparator null
+    decimalSeparator null
+  
+    table {
+        showIcons true
+        iconSize 16
+        verticalPadding 2
+
+        useAlternateColor true
+        colorHighlighting false
+
+        circularSelection false
+
+        hideExtensions false
+        folderPrefix "["
+        folderSuffix "]"
+
+        showGoUpFolder true
+        selectGoUpFolderOnEnter true
+    }
+}
+
+keyBindings {
+    "F1" "core.actions"
+    "Shift+F1" "core.documentation"
+
+    "Cmd+D" "core.favorites"
+    "Ctrl+D" "core.favorites"
+
+    "Ctrl+Left" "core.clone.left"
+    "Ctrl+Right" "core.clone.right"
+    
+    "Insert" "core.selection.invert"
+}
