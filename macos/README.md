@@ -48,7 +48,8 @@ brew install \
 ```sh
 brew install \
   tree \
-  htop
+  htop \
+  shellcheck
 ```
 
 If needed, install the following packages:
@@ -58,7 +59,7 @@ brew install \
   zsh \
   zsh-completions \
   zsh-autosuggestions \
-  zsh-syntax-highlighting \
+  zsh-syntax-highlighting
 ```
 
 #### fd
@@ -117,7 +118,9 @@ cp -r .oh-my-zsh/custom ~/.oh-my-zsh/custom
 
 ```sh
 brew tap homebrew/cask-fonts
-brew install font-roboto-mono-nerd-font
+brew install \
+  font-roboto-mono-nerd-font \
+  font-hack-nerd-font
 ```
 
 https://github.com/powerline/fonts
