@@ -1,15 +1,12 @@
-export EPIPHAN_USERNAME=vshestakov
-
-
-
 # Added by Toolbox App
 export PATH="$PATH:/usr/local/bin"
+
 # Setting PATH for Python 3.10
 # The original version is saved in .zprofile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.10/bin:${PATH}"
-export PATH
+# PATH="/Library/Frameworks/Python.framework/Versions/3.10/bin:${PATH}"
+# export PATH
 
 # Setting PATH for Python 3.13
 # The original version is saved in .zprofile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.13/bin:${PATH}"
-export PATH
+# PATH="/Library/Frameworks/Python.framework/Versions/3.13/bin:${PATH}"
+# export PATH

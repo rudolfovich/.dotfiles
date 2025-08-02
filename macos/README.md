@@ -31,15 +31,24 @@ brew install \
 brew install \
   ripgrep \
   fzf \
-  fd
+  fd \
+  bat \
+  bat-extras \
+  git-delta \
+  eza
+```
+
+```sh
+brew install \
+  zoxide \
+  gh \
+  lazygit
 ```
 
 ```sh
 brew install \
   tree \
-  htop \
-  bat \
-  eza
+  htop
 ```
 
 If needed, install the following packages:
@@ -61,6 +70,35 @@ fd is a program to find entries in your filesystem. It is a simple, fast and use
 ```sh
 brew install fd
 ```
+#### bat
+
+Bat is a cat clone with wings. It is a `cat` clone with syntax highlighting and Git integration. It is a drop-in replacement for `cat`.
+
+[batdiff](https://github.com/eth-p/bat-extras/blob/master/doc/batdiff.md)
+[batgrep](https://github.com/eth-p/bat-extras/blob/master/doc/batgrep.md)
+[batman](https://github.com/eth-p/bat-extras/blob/master/doc/batman.md)
+[batpipe](https://github.com/eth-p/bat-extras/blob/master/doc/batpipe.md)
+[batwatch](https://github.com/eth-p/bat-extras/blob/master/doc/batwatch.md)
+[prettybat](https://github.com/eth-p/bat-extras/blob/master/doc/prettybat.md)
+
+#### eza
+
+[Eza](https://github.com/oguzhaninan/eza) is a modern replacement for `ls`. It is a modern replacement for `ls` with more features and better defaults. It is a drop-in replacement for `ls`.
+
+```sh
+brew install eza
+```
+
+#### fzf
+
+[Fzf](https://github.com/junegunn/fzf) is a command-line fuzzy finder. It is a general-purpose command-line fuzzy finder. It can be used to search for files, directories, and more. It is a drop-in replacement for `fzf`.
+
+```sh
+brew install fzf
+# $(brew --prefix)/opt/fzf/install
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+```
 
 ### Install Oh My Zsh
 
@@ -75,7 +113,12 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 cp -r .oh-my-zsh/custom ~/.oh-my-zsh/custom
 ```
 
-### Install PowerLine Fonts
+### Install Fonts
+
+```sh
+brew tap homebrew/cask-fonts
+brew install font-roboto-mono-nerd-font
+```
 
 https://github.com/powerline/fonts
 
