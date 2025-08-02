@@ -133,6 +133,15 @@ cd ..
 rm -rf powerline-fonts
 ```
 
+### NeoVim Configuration
+
+```sh
+mkdir -p ~/.config/nvim
+cp .config/nvim/init.lua ~/.config/nvim/init.lua
+# https://github.com/neovim/nvim-lspconfig?tab=readme-ov-file#install
+git clone https://github.com/neovim/nvim-lspconfig ~/.config/nvim/pack/nvim/start/nvim-lspconfig
+```
+
 ### Install iTerm2
 
 ```sh
