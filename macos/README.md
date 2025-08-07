@@ -54,13 +54,18 @@ brew install \
 
 If needed, install the following packages:
 ```sh
-brew install \
-  coreutils \
-  zsh \
-  zsh-completions \
-  zsh-autosuggestions \
-  zsh-syntax-highlighting
+brew install coreutils
+brew install zsh
+brew install zsh-syntax-highlighting
+
+# brew install zsh-completions
+# brew install zsh-autosuggestions
+# or as Oh My Zsh plugins:
+git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
 ```
+
 
 #### fd
 

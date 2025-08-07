@@ -61,6 +61,14 @@ CASE_SENSITIVE="true"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+# zsh-completions
+# https://github.com/zsh-users/zsh-completions
+# To install call: git clone https://github.com/zsh-users/zsh-completions.git \
+#   ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+autoload -U compinit && compinit
+
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -90,4 +98,6 @@ plugins=(
     # sublime
     # ripgrep removed, use `rg` instead
     fzf
+    zsh-autosuggestions
+    zsh-completions
 )

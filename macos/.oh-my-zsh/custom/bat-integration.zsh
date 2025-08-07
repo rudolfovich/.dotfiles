@@ -58,7 +58,7 @@ function git_log() {
 }
 
 function git_status() {
-    git status --short | fzf \
+    git diff --name-only "$@" | fzf \
         --preview 'git diff --color=always {1} | delta --width=$FZF_PREVIEW_COLUMNS' \
         --preview-window=up:70% \
         --bind 'enter:execute(git add {1})+reload(git status --short)'
